@@ -45,3 +45,38 @@ function encontrarRutaMasPesada(arregloPiramide) {
 
     return copia[0][0];
 }
+
+function botonReiniciar(){
+    document.getElementById("pyramid").innerHTML= " ";
+
+    let piramideReiniciada = parseInt(document.getElementById("Cantidad").value);
+
+    let arregloPiramideReiniciada = [];
+
+        for (let i = 1; i <= piramideReiniciada; i++) {
+            let niveles = [];
+
+            for (let j = 0; j < i; j++) {
+                const numeroAleatorio2 = Math.floor(Math.random() * 99) + 1;
+                niveles.push(numeroAleatorio2);
+            }
+
+            arregloPiramideReiniciada.push(niveles);
+        }
+
+        console.log(arregloPiramideReiniciada);
+
+        let elemento2 = "";
+        for (let i = 0; i < arregloPiramideReiniciada.length; i++) {
+            elemento2 += '<div class="espacio">';
+            for (let j = 0; j < arregloPiramideReiniciada[i].length; j++) {
+                elemento2 += '<div class="cuadrado">' + arregloPiramideReiniciada[i][j] + '</div>';
+            }
+            elemento2 += '</div>';
+        }
+        document.getElementById("pyramid").innerHTML = elemento2;
+
+        const resultado = encontrarRutaMasPesada(arregloPiramideReiniciada);
+        console.log("Ruta más pesada:", resultado);
+}
+
