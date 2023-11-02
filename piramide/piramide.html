@@ -9,22 +9,30 @@
 </head>
 <body>
     
-    <div class="input">
-        <h1>Cantidad de filas</h1>
-        <br>
+    <div class="main">
+        <div class="input">
+            <h1>Cantidad de filas</h1>
+            <br>
 
-        <input type="number" class="estilo" id="Cantidad">
+            <input type="number" class="estilo" id="Cantidad">
 
-        <br>
+            <br>
 
-        <div class="boton">
-            <button onclick="Dibujar()" class="forma">Dibujar</button>
+            <div class="boton">
+                <button onclick="Dibujar()" class="forma">Dibujar</button>
+            </div>
+        </div>
+
+        <div class="boton2">
+                <button onclick="Reinicio()" class="diseño"><img src="img/reinicio1.png" class="img"></button>
         </div>
     </div>
 
     <br>
 
-        <div id="pyramid"></div>
+    <div id="respuesta"></div>
+
+    <div id="pyramid"></div>
 
     <script src="logica.js"></script>
 
