@@ -1,0 +1,41 @@
+*{
+    margin: unset;
+    padding: unset;
+}
+
+body{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 15rem;
+    border: 2px solid black;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.estilo{
+    border-radius: 5%;
+    height: 1.5rem;
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+    width: 10rem;
+}
+
+.forma{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5%;
+    cursor: pointer;
+}
