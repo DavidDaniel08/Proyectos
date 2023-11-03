@@ -27,9 +27,7 @@ function Dibujar() {
         }
         document.getElementById("pyramid").innerHTML = elemento;
 
-        const resultado = encontrarRutaMasPesada(arregloPiramide);
-        console.log("Ruta más pesada:", resultado);
-
+        encontrarRutaMasPesada(arregloPiramide);
         respuestaRuta(arregloPiramide);
     } else {
         alert("El número tiene que ser mayor a 0 y menor que 51");
@@ -44,7 +42,7 @@ function encontrarRutaMasPesada(arregloPiramide) {
             copia[i][j] += Math.max(copia[i + 1][j], copia[i + 1][j + 1]);
         }
     }
-    return copia[0][0];
+    console.log("Ruta más pesada:", copia[0][0]);
 }
 
 function botonReiniciar(){
