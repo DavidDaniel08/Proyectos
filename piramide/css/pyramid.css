@@ -1,0 +1,35 @@
+#pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Space{
+    display: flex;
+    gap: 1rem;
+}
+
+.Blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    border: 0.25rem solid rgba(255, 0, 0, 0.363);
+    border-radius: 0.8rem;
+    background-color: rgb(247, 144, 144);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.Path {
+    background-color: rgba(189, 144, 247, 0.63);
+    border: 0.25rem solid rgba(151, 0, 156, 0.541);
+    color: black;
+}
+
+
