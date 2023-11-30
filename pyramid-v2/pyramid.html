@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piramide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pyramid.css">
+    <link rel="stylesheet" href="css/blocks.css">
+</head>
+
+<body>
+    <main>
+        <div class="Input">
+            <div>
+                <div>Tamaño</div>
+                <input type="number" class="Style" id="Cantidad">
+            </div>
+            <div class="Button">
+                <button onclick="Historial()" class="ButtonHistorial"><a href="historial.html" target="_blank">Historial</a></button>
+                <button onclick="Dibujar()" class="ButtonCalculate">Calcular</button>
+            </div>
+        </div>
+
+        <div id="pyramid"></div>
+
+        <div class="ButtonRestart">
+            <button onclick="botonReiniciar()" class="Design"><img src="img/restart-one.png" class="ImageRestart"/>
+        </div>
+    </main>
+    
+    <section>
+        <div id="respuesta"></div>
+    </section>
+
+    <script src="js/pyramidDraw.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/routeAnswer.js"></script>
+    <script src="js/routeColor.js"></script>
+    <script src="js/buttonRestart.js"></script>
+
+</body>
+</html>

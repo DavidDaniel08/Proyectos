@@ -1,0 +1,32 @@
+*{
+    margin: unset;
+    padding: unset;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+#botones-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#piramide-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.space{
+    display: flex;
+    gap: 1rem;
+}
+
+#ruta-mas-pesada{
+    display: flex;
+    gap: 1rem;
+}
