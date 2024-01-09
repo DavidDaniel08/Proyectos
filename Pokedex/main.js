@@ -2,16 +2,12 @@ const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
 const URL = "https://pokeapi.co/api/v2/pokemon/";
 
-// Función para realizar una solicitud fetch y obtener datos JSON
 const fetchData = (i) => fetch(URL + i).then(response => response.json());
 
-// Crear un array de promesas para todas las solicitudes fetch
 const requests = Array.from({ length: 898 }, (_, i) => fetchData(i + 1));
 
-// Utilizar Promise.all para esperar a que todas las promesas se resuelvan
 Promise.all(requests)
     .then(dataArray => {
-        // Procesar cada conjunto de datos y mostrar el Pokémon
         dataArray.forEach(data => mostrarPokemon(data));
     })
     .catch(error => console.error('Error de carga:', error));

@@ -121,6 +121,11 @@ main{
     overflow: hidden;
 }
 
+.pokemon:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+}
+
 .pokemon-id-back{
     position: absolute;
     top: 1rem;
