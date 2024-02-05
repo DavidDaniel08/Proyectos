@@ -4,7 +4,7 @@ const URL = "https://pokeapi.co/api/v2/pokemon/";
 
 const fetchData = (i) => fetch(URL + i).then(response => response.json());
 
-const requests = Array.from({ length: 898 }, (_, i) => fetchData(i + 1));
+const requests = Array.from({ length: 150 }, (_, i) => fetchData(i + 1));
 
 Promise.all(requests)
     .then(dataArray => {
@@ -50,7 +50,7 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
 
     listaPokemon.innerHTML = "";
 
-    const requests = Array.from({ length: 898 }, (_, i) => fetch(URL + (i + 1)).then(response => response.json()));
+    const requests = Array.from({ length: 150 }, (_, i) => fetch(URL + (i + 1)).then(response => response.json()));
 
     Promise.all(requests)
         .then(dataArray => {
