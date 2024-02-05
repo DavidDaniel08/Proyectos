@@ -1,15 +1,22 @@
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+const styleSwitcher = document.querySelector(".style-switcher");
+
+let isScrolling = false;
+
 styleSwitcherToggle.addEventListener("click", () => {
-    document.querySelector(".style-switcher").classList.toggle("open");
-})
+    styleSwitcher.classList.toggle("open");
+});
 
-//hode style - switcher on scroll
-
-window.addEventListener("scroll", () => {
-    if(document.querySelector(".style-switcher").classList.contains("open")){
-        document.querySelector(".style-switcher").classList.remove("open");
+window.addEventListener("wheel", () => {
+    if (!isScrolling && styleSwitcher.classList.contains("open")) {
+        isScrolling = true;
+        styleSwitcher.classList.remove("open");
+        setTimeout(() => {
+            isScrolling = false;
+        }, 300);
     }
-})
+});
+
 
 //theme colors
 
