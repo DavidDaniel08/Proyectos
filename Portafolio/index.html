@@ -26,15 +26,15 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="activate"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portafolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="activate"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#portafolio"><i class="fa fa-briefcase"></i>Portafolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
 
         <div class="main-content">
-            <section class="home section "> <!-- hidden-->
+            <section class="home section activate" id="home"> 
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -43,7 +43,7 @@
                             <p>I'm a web Designer with extensive experience for over 2 years. My expertise is to
                                 create and website design, graphic design, and many more...
                             </p>
-                            <a href="#contact" class="btn hire-me">Hire me</a>
+                            <a href="#" class="btn">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="img/david.png" alt="">
@@ -52,7 +52,7 @@
                 </div>
             </section>
 
-            <section class="about section "> <!-- hidden-->
+            <section class="about section " id="about"> 
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -101,8 +101,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -235,7 +234,7 @@
                 </div>
             </section>
 
-            <section class="portafolio section ">
+            <section class="portafolio section " id="portafolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -293,7 +292,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -371,8 +370,9 @@
             <i class="fas fa-cog fa-spin"></i>
         </div>
         <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
+            <i class="fas "></i>
         </div>
+        
         <h4>Theme Colors</h4>
         <div class="colors">
             <span class="color-1" onclick="setActiveStyle('color-1')"></span>
@@ -383,6 +383,9 @@
         </div>
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" 
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
 </body>
